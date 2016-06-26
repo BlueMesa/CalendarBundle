@@ -78,7 +78,7 @@ class CalendarController extends AbstractController
             $alarm->ACTION = 'DISPLAY';
         }
 
-        return new Response($calendar->serialize(),200,
+        return new Response($calendar->serialize(), 200,
                 array(
                     'Content-Type' => 'text/calendar; charset=utf-8',
                     'Content-Disposition' => 'inline; filename="calendar.ics"'));
