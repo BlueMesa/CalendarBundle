@@ -38,7 +38,7 @@ class CalendarController extends AbstractController
      * @Route("/{username}.ics")
      *
      * @param  string                                    $username User to create the calendar for
-     * @return Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function calendarAction($username)
     {
